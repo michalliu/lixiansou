@@ -1,0 +1,15 @@
+{
+    "name": "离线搜辅助工具",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "批量下载支持.",
+    "permissions":["clipboardWrite"],
+    "content_scripts":[{
+        "run_at":"document_end",
+        "matches":["http://lixiansou.oa.com/iso*"],
+        "js":["/scripts/main.js"]
+    }],
+    "background": {
+        "page": "background.html"
+    }
+}
