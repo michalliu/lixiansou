@@ -1,19 +1,6 @@
 <!doctype html>
 <html>
 <textarea id="clipboardDataHolder"></textarea>
-<script>
-/*global document,chrome*/
-var doc = document,
-    area = doc.getElementById('clipboardDataHolder');
-chrome.extension.onRequest.addListener(
-    function (request, sender, sendResponse) {
-        if (request.command === 'copyToClipboard') {
-            area.value = request.data;
-            area.select();
-            sendResponse(document.execCommand('copy'));
-        }
-    }
-);
-</script>
+<script src="/scripts/background.js"></script>
 </html>
 

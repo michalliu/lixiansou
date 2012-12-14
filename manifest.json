@@ -1,8 +1,8 @@
 {
-    "name": "离线搜辅助工具",
-    "version": "1.0.0",
+    "name": "离线搜下载辅助工具",
+    "version": "1.1",
     "manifest_version": 2,
-    "description": "批量下载支持.",
+    "description": "提供离线搜快捷复制以及批量下载支持",
     "permissions":["clipboardWrite"],
     "content_scripts":[{
         "run_at":"document_end",
